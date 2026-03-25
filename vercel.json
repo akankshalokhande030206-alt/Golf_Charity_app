@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "golf_Charity_sub_app.py",
+      "src": "index.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
-      "src": "(.*)",
-      "dest": "golf_Charity_sub_app.py"
+      "src": "/(.*)",
+      "dest": "index.py"
     }
   ]
 }
